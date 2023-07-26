@@ -10,7 +10,7 @@ import Sidebar from "./Sidebar";
 import TopNavBar from "./TopNavbar";
 
 const Layout = () => {
-  const [sidebarVisible, setSidebarVisible] = useState(true);
+  const [sidebarVisible, setSidebarVisible] = useState(false);
 
   const toggleSidebar = () => {
     setSidebarVisible((prevState) => !prevState);
