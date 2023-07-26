@@ -16,7 +16,7 @@ const Form2 = () => {
   };
 
   return (
-    <div className="m-6 bg-white shadow-md rounded-lg p-8">
+    <div className="m-6 bg-white shadow-md rounded-lg p-8 overflow-hidden">
       <h2 className="text-2xl font-bold mb-4">Form Title</h2>
       <p className="text-sm mb-4">
         Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue
@@ -25,7 +25,7 @@ const Form2 = () => {
 
       <div className="flex flex-wrap space-x-4 mb-4">
       <button
-        className={`flex px-3 border py-2 rounded ${
+        className={`flex px-3 border mt-2 py-2 rounded ${
           selectedFlag === 1 ? 'bg-yellow-400' : 'bg-white'
         }`}
         onClick={() => handleFlagClick(1)}
@@ -67,7 +67,7 @@ const Form2 = () => {
       </button>
 
       <button
-        className={`flex px-3 py-2 rounded border ${
+        className={`flex px-3 py-2 mt-2 rounded border  ${
           selectedFlag === 2 ? 'bg-yellow-400' : 'bg-white'
         }`}
         onClick={() => handleFlagClick(2)}

@@ -4,9 +4,9 @@ const Navbar = () => {
   return (
     <div className="flex flex-wrap md:flex-no-wrap p-4 bg-white text-black">
       {/* Title */}
-      <h1 className="font-bold text-2xl pt-1 md:pt-0 md:mr-8 ml-4">Add new post</h1>
+      <h1 className="font-bold text-2xl pt-2 lg:pt-1 flex ml-auto mr-auto lg:ml-4 lg:mr-4">Add new post</h1>
 
-      <div className="flex ">
+      <div className="flex ml-auto mr-auto lg:ml-4  ">
         {/* Add Content Button */}
         <button className="pr-12">+ Add Content</button>
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       </div>
 
       {/* Search Bar */}
-      <div className="ml-auto flex items-center mt-4 md:mt-0">
+      <div className="ml-auto mr-auto flex items-center mt-4 md:mt-0 lg:mr-4">
   <div className="relative">
     <svg
       xmlns="http://www.w3.org/2000/svg"

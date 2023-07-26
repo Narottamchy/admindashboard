@@ -30,7 +30,7 @@ const Layout = () => {
         <main className={`flex-1 w-0 bg-gray-100 text-black ${sidebarVisible ? "" : ""}`}>
           {/* Button to toggle sidebar visibility */}
           <button
-            className={`fixed right-4 bottom-4 md:hidden bg-white p-2 rounded-full shadow-lg`}
+            className={`fixed left-4 top-4 md:hidden bg-white p-1 rounded-full shadow-lg`}
             onClick={toggleSidebar}
           >
             {sidebarVisible ? (

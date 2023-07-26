@@ -10,7 +10,7 @@ const Form4 = () => {
   ];
 
   return (
-    <div className="mt-6 mx-6 lg:mr-6 bg-white shadow-md rounded-lg p-8">
+    <div className="mt-6 mx-6 lg:mr-6 bg-white shadow-md rounded-lg p-8 overflow-hidden">
       <h2 className="text-2xl font-bold mb-4">Form Title</h2>
 
       <div className="mb-6">

@@ -358,13 +358,13 @@ const Form1 = () => {
   );
 
   return (
-    <div className="m-6 bg-white shadow-md rounded-lg p-8">
+    <div className="m-6 bg-white shadow-md rounded-lg p-8 overflow-hidden">
       <h2 className="text-2xl font-bold mb-4">Form Title</h2>
       <p className="text-sm mb-4">
         Sed tortor, sed velit ridiculus ipsum pharetra lacus odio gravida augue
         enim.
       </p>
-      <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4">
+      <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded overflow-hidden relative mb-4">
         <div className="flex items-center ">
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -19,7 +19,7 @@ const InfoBox = () => {
   return (
     <div className="flex flex-wrap w-full justify-center mt-6 text-black">
       {images.map((image, index) => (
-        <div key={index} className="m-2 sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+        <div key={index} className="mx-4 mb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
           <div className=" shadow bg-white rounded-lg p-8 flex items-center">
             {image.img}
             <div className="ml-4">
