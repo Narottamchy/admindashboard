@@ -132,11 +132,11 @@ const Sidebar = () => {
                 {/* Add expand-up and expand-down SVG icons */}
                 {activeSection === section.name ? (
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-auto mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="white" stroke-width="2"/>
+                  <path d="M13.5 11.25L9 6.75L4.5 11.25" stroke="white" strokeWidth="2"/>
                   </svg>
                 ) : (
                   <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 ml-auto mr-2" width="18" height="18" viewBox="0 0 18 18" fill="none">
-<path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="white" stroke-width="2"/>
+<path d="M13.5 6.75L9 11.25L4.5 6.75" stroke="white" strokeWidth="2"/>
 </svg>
                 )}
               </button>

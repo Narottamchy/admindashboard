@@ -421,8 +421,8 @@ const Form1 = () => {
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
 
-<path d="M9.5 14L5 9.5L9.5 5" stroke="#262626" stroke-width="2"/>
-<path d="M14 14L9.5 9.5L14 5" stroke="#262626" stroke-width="2"/>
+<path d="M9.5 14L5 9.5L9.5 5" stroke="#262626" strokeWidth="2"/>
+<path d="M14 14L9.5 9.5L14 5" stroke="#262626" strokeWidth="2"/>
 </svg>
         </button>
         {Array.from({ length: totalPages }, (_, index) => (
@@ -443,8 +443,8 @@ const Form1 = () => {
           disabled={currentPage === totalPages}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none">
-<path d="M9.5 14L14 9.5L9.5 5" stroke="#262626" stroke-width="2"/>
-<path d="M5 14L9.5 9.5L5 5" stroke="#262626" stroke-width="2"/>
+<path d="M9.5 14L14 9.5L9.5 5" stroke="#262626" strokeWidth="2"/>
+<path d="M5 14L9.5 9.5L5 5" stroke="#262626" strokeWidth="2"/>
 </svg>
         </button>
       </div>
