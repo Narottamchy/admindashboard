@@ -19,23 +19,15 @@ const Layout = () => {
   return (
     <>
       <title>Dashboard</title>
-      <TopNavBar/>
+      <TopNavBar />
       <div className="flex bg-neutral-900">
         {/* Sidebar */}
-        <div
-          className={`fixed left-0 h-full w-64 bg-white ${
-            sidebarVisible ? "" : "hidden"
-          }`}
-        >
+        <div className={`md:block ${sidebarVisible ? "" : "hidden"}`}>
           <Sidebar />
         </div>
 
         {/* Main content */}
-        <main
-          className={`flex-1 w-0 bg-gray-100 text-black ml-64 ${
-            sidebarVisible ? "" : "ml-0"
-          }`}
-        >
+        <main className={`flex-1 w-0 bg-gray-100 text-black ${sidebarVisible ? "" : ""}`}>
           {/* Button to toggle sidebar visibility */}
           <button
             className={`fixed right-4 bottom-4 md:hidden bg-white p-2 rounded-full shadow-lg`}
@@ -43,18 +35,19 @@ const Layout = () => {
           >
             {sidebarVisible ? (
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-gray-700"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-gray-700"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
                 fillRule="evenodd"
                 d="M3.293 3.293a1 1 0 011.414 0L10 8.586l5.293-5.293a1 1 0 111.414 1.414L11.414 10l5.293 5.293a1 1 0 01-1.414 1.414L10 11.414l-5.293 5.293a1 1 0 01-1.414-1.414L8.586 10 3.293 4.707a1 1 0 010-1.414z"
                 clipRule="evenodd"
               />
-              </svg>
+            </svg>
+              
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -73,19 +66,19 @@ const Layout = () => {
           </button>
 
           {/* Main content goes here */}
-          <div className={`md:block ${sidebarVisible ? "hidden" : ""}`}>
-            <Navbar />
-            <InfoBox />
-            <Form1 />
-            <Form2 />
-            <div className="flex flex-col lg:flex-row mb-6">
-              <div className="w-full lg:w-3/4 lg:mr-2">
-                <Form3 />
-              </div>
-              <div className="w-full lg:w-1/4 lg:ml-2 mt-4 lg:mt-0">
-                <Form4 />
-              </div>
+          <div>
+          <Navbar />
+          <InfoBox />
+          <Form1 />
+          <Form2 />
+          <div className="flex flex-col lg:flex-row mb-6">
+            <div className="w-full lg:w-3/4 lg:mr-2">
+              <Form3 />
             </div>
+            <div className="w-full lg:w-1/4 lg:ml-2 mt-4 lg:mt-0">
+              <Form4 />
+            </div>
+          </div>
           </div>
         </main>
       </div>
