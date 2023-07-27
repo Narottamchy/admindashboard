@@ -3,7 +3,7 @@ import Image from 'next/image';
 const TopNavBar = () => {
     return (
 <div className="flex w-full p-4 items-center justify-between bg-black text-white">
-      <div className="flex items-center ml-4 space-x-8">
+      <div className="flex items-center ml-4 mr-4 md:ml-4 sm:mr-auto sm:ml-auto space-x-8">
         {/* Home */}
         <button className="items-center hidden sm:flex">
           <svg
